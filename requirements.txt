@@ -1,0 +1,30 @@
+# GUI Framework
+PySide6>=6.8.1
+
+# System Monitoring
+psutil>=5.9.0
+wmi>=1.5.1
+
+# Input Handling
+keyboard>=0.13.5
+
+# Building Tools
+pyinstaller>=6.3.0
+
+# Optional - Development Dependencies
+# pytest>=7.4.0
+# black>=23.7.0
+# pylint>=2.17.5
+# mypy>=1.5.1
+
+# Added from the code block
+pywin32==308
+
+# Added from the code block
+nuitka
+ordered-set
+zstandard  # Sıkıştırma için
+
+# Update checking
+requests>=2.31.0
+packaging>=23.2
