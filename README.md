@@ -2,6 +2,9 @@
 
 A simple fan control application designed specifically for Dell/Alienware computers. This tool allows you to easily manage your CPU and GPU fans without changing power profiles, CPU voltages, overclock settings etc., create custom profiles, and monitor temperature values.
 
+![image](https://github.com/user-attachments/assets/e2c22346-299f-4253-904d-6bcc0414a9e1)
+
+
 ## Features
 
 - 🌡️ Real-time CPU and GPU temperature monitoring
@@ -25,6 +28,12 @@ A simple fan control application designed specifically for Dell/Alienware comput
 - 🚀 Automatic startup with Windows
 - 🔄 Customizable monitoring interval
 - 💻 System tray support
+
+![image](https://github.com/user-attachments/assets/4a2a9650-5df3-422b-b28e-e4c8622b8520)
+
+![image](https://github.com/user-attachments/assets/613ceca4-3018-4e06-868e-a07328d528c7)
+
+
 ## Supported Devices
 - Dell G15 5530
 - other models might work but I am working on them please let me now if it works or not with yours
@@ -113,8 +122,6 @@ This software ("Fan Control Center") is a third-party application developed for 
 ---
 
 *By using this software, you acknowledge and accept all the terms stated above.*
-
-© 2024 Nova Web. All rights reserved.
 
 ## License
 
