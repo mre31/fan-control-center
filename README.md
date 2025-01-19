@@ -1,6 +1,6 @@
 # Fan Control Center
 
-A simple fan control application designed specifically for Dell/Alienware computers. This tool allows you to easily manage your CPU and GPU fans without messing with power profiles, CPU voltages, overclock settings etc., create custom profiles, and monitor temperature values.
+A simple fan control application designed specifically for Dell/Alienware computers. This tool allows you to easily manage your CPU and GPU fans without changing power profiles, CPU voltages, overclock settings etc., create custom profiles, and monitor temperature values.
 
 ## Features
 
@@ -28,24 +28,25 @@ A simple fan control application designed specifically for Dell/Alienware comput
 ## Supported Devices
 - Dell G15 5530
 - other models might work but I am working on them please let me now if it works or not with yours
+  
 ## Requirements
 
-- Windows operating system
-- Alienware computer
+- Windows 11 operating system
+- Dell/Alienware computer
 - Administrator rights
 - Python 3.x (for running from source)
 
 ## Installation
 
-1. Download the latest release from [Releases](https://github.com/username/fan-control-center/releases)
-2. Run the downloaded .exe file
-3. Accept administrator permissions
+1. Download the latest release from [Releases](https://github.com/mre31/fan-control-center/releases)
+3. Run the downloaded .exe file
+4. Accept administrator permissions
 
 ## Running from Source
 
 Clone the repository
 ```
-git clone https://github.com/username/fan-control-center.git
+git clone https://github.com/mre31/fan-control-center.git
 ```
 Navigate to project directory
 ```
@@ -59,6 +60,10 @@ Run the application with admin privileges
 ```
 python main.py
 ```
+To build the app
+```
+.\build.ps1
+```
 
 ## Usage
 
@@ -68,6 +73,8 @@ python main.py
 4. Assign keyboard shortcuts to profiles
 5. Optionally keep the application running in system tray
 
+> Sometimes if custom speeds are too low System takes control of the fans until it cools down to normal temps. Be aware.
+
 ## Contributing
 
 1. Fork this repository
@@ -76,10 +83,39 @@ python main.py
 4. Push to the branch (`git push origin new-feature`)
 5. Create a Pull Request
 
+# Disclaimer - Important Notice
+
+This software ("Fan Control Center") is a third-party application developed for fan control of Dell Alienware computers.
+
+## 1. Use at Your Own Risk
+- The use of this software is entirely at your own risk.
+- Manual control of fan speeds may cause your hardware to heat up.
+- Improper fan settings may affect system performance and hardware lifespan.
+
+## 2. Warranty Disclaimer
+- This software is provided "AS IS".
+- No warranties are given regarding the operation of the software or its fitness for any particular purpose.
+- The developers cannot be held liable for any hardware damage, data loss, or other damages resulting from the use of this software.
+
+## 3. Compatibility
+- This software has only been tested on Dell Alienware systems.
+- Operation on other systems is not guaranteed.
+- Alienware Command Center (AWCC) software must be installed at least once.
+
+## 4. Administrator Privileges
+- The software requires administrator privileges for fan control.
+- The software will not function properly without these permissions.
+
+## 5. Third-Party Software
+- This application is not affiliated with or endorsed by Dell Inc.
+- This is an independent tool created for Dell/Alienware users.
+
+---
+
+*By using this software, you acknowledge and accept all the terms stated above.*
+
+© 2024 Nova Web. All rights reserved.
+
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) file for details.
-
-## Contact
-
-- Project Owner: NovaWeb
+This project is licensed under the BSD 3-Clause License.
