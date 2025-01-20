@@ -3,6 +3,7 @@ import wmi
 import ctypes
 import sys
 from .AWCCWmiWrapper import AWCCWmiWrapper
+from .Hardware_Detect import DetectHardware
 from .FanProfile import ProfileManager, FanProfile
 
 def is_admin():
@@ -13,12 +14,6 @@ def is_admin():
         return False
 
 class FanControl:
-    # Fan and Sensor IDs
-    CPU_FAN_ID = 0x32      # CPU Fan ID
-    GPU_FAN_ID = 0x33      # GPU Fan ID
-    CPU_SENSOR_ID = 0x01   # CPU Temperature sensor
-    GPU_SENSOR_ID = 0x06   # GPU Temperature sensor
-
     def __init__(self) -> None:
         # Don't request elevation if already running as admin
         if not is_admin() and not getattr(sys, 'frozen', False):
@@ -38,6 +33,21 @@ class FanControl:
         except Exception as ex:
             print(f"WMI Error: {ex}")
             raise Exception("AWCC WMI connection could not be established. Please run as administrator.")
+
+        # Tespit edilen fan ve sensör ID'lerini al
+        detected_pairs = self._awcc.GetFanIdsAndRelatedSensorsIds()
+        if len(detected_pairs) >= 2:
+            # CPU ve GPU fan/sensör ID'lerini ayarla
+            cpu_fan_id, cpu_sensor_ids = detected_pairs[0]
+            gpu_fan_id, gpu_sensor_ids = detected_pairs[1]
+            
+            # Sınıf değişkenlerini güncelle
+            self.CPU_FAN_ID = cpu_fan_id
+            self.GPU_FAN_ID = gpu_fan_id
+            self.CPU_SENSOR_ID = cpu_sensor_ids[0]
+            self.GPU_SENSOR_ID = gpu_sensor_ids[0]
+        else:
+            raise Exception("Fan and sensor IDs could not be detected. Your device might not be supported.")
 
         # Fan ID'lerini al
         self._fanIds = self._getFanIds()
