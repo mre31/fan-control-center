@@ -1464,7 +1464,7 @@ class FanControlGUI(QtWidgets.QMainWindow):
             response = requests.get('https://api.github.com/repos/mre31/fan-control-center/releases/latest')
             if response.status_code == 200:
                 latest_version = version.parse(response.json()['tag_name'].lstrip('v'))
-                current_version = version.parse('1.0.0')  # Mevcut sürüm
+                current_version = version.parse('1.1.0')  # Mevcut sürüm
                 
                 if latest_version > current_version:
                     self.update_status_label.setText(
