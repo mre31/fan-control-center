@@ -15,7 +15,7 @@ VSVersionInfo(
         u'040904B0',
         [StringStruct(u'CompanyName', u'Nova Web'),
          StringStruct(u'FileDescription', u'Fan Control Center'),
-         StringStruct(u'FileVersion', u'1.0.0'),
+         StringStruct(u'FileVersion', u'1.1.0'),
          StringStruct(u'InternalName', u'FanControlCenter'),
          StringStruct(u'LegalCopyright', u'Copyright (c) 2024 Nova Web'),
          StringStruct(u'OriginalFilename', u'FanControlCenter.exe'),
