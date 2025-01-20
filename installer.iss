@@ -1,5 +1,5 @@
 #define MyAppName "Fan Control Center"
-#define MyAppVersion "1.0.0"
+#define MyAppVersion "1.1.0"
 #define MyAppPublisher "Nova Web"
 #define MyAppExeName "FanControlCenter.exe"
 

@@ -20,7 +20,7 @@ VSVersionInfo(
          StringStruct(u'LegalCopyright', u'Copyright (c) 2024 Nova Web'),
          StringStruct(u'OriginalFilename', u'FanControlCenter.exe'),
          StringStruct(u'ProductName', u'Fan Control Center'),
-         StringStruct(u'ProductVersion', u'1.0.0')])
+         StringStruct(u'ProductVersion', u'1.1.0')])
     ]),
     VarFileInfo([VarStruct(u'Translation', [1033, 1200])])
   ]

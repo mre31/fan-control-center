@@ -28,7 +28,7 @@ if (Test-Path "FanControlCenter.exe") { Remove-Item -Force "FanControlCenter.exe
 # Build the executable
 Write-Host "Building executable..." -ForegroundColor Yellow
 $mainPath = "Uygulama\main.py"
-$version = "1.0.0"
+$version = "1.1.0"
 Write-Host "Building version $version..." -ForegroundColor Green
 
 # Nuitka build command

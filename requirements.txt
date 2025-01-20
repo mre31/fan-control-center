@@ -8,14 +8,11 @@ wmi>=1.5.1
 # Input Handling
 keyboard>=0.13.5
 
-# Building Tools
-pyinstaller>=6.3.0
-
 # Optional - Development Dependencies
-# pytest>=7.4.0
-# black>=23.7.0
-# pylint>=2.17.5
-# mypy>=1.5.1
+pytest>=7.4.0
+black>=23.7.0
+pylint>=2.17.5
+mypy>=1.5.1
 
 # Added from the code block
 pywin32==308
